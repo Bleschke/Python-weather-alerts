@@ -72,8 +72,6 @@ elif type == 'TOW':
 elif type == 'VOL':
 	print ('Volcanic Activity Statement')
 	GPIO.output(WeatherLED,True)
-	cmd_string = '/home/pi/WeatherAlerts/speech.sh ATTENTION! A'
-	os.system(cmd_string)
 	v.speak('ATTENTION! A')
 	v.speak(description)
 	v.speak('is in effect from')
@@ -84,8 +82,6 @@ elif type == 'VOL':
 elif type == 'HWW':
 	print ('Hurricane Wind Warning')
 	GPIO.output(WeatherLED,True)
-	cmd_string = '/home/pi/WeatherAlerts/speech.sh ATTENTION! A'
-	os.system(cmd_string)
 	v.speak('ATTENTION! A')
 	v.speak(description)
 	v.speak('is in effect from')
