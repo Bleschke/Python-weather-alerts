@@ -2,9 +2,6 @@
 # June 1, 2019
 # Version 3.0
 # Python Weather Alerts
-# Some code may have been taken from
-# other sources such as Weather Underground.
-
 
 import feedparser
 import os
